@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I'm Really Sorry ❤️</title>
+    <title> Özür Dilerim Sevilayımm ❤️</title>
     <style>
         * {
             margin: 0;
@@ -269,10 +269,10 @@
     <div class="bg-heart" style="top: 20%; left: 50%; animation-delay: 8s;">💝</div>
 
     <div class="container">
-        <div id="mainText">I'm really sorry ❤️<br>Please forgive me 🥺</div>
+        <div id="mainText">Çok üzgünüm askim ❤️<br>Nolur beni affet Sevilayımm 🥺</div>
         <div class="buttons">
-            <button id="yesBtn">Okay baby, I forgive you 💖</button>
-            <button id="noBtn">No, I'm still angry 😠</button>
+            <button id="yesBtn">Yeniden Ardisim olabilirsin 💖</button>
+            <button id="noBtn">Hyr daha kizginim sana 😠</button>
         </div>
         <div id="clickCount"></div>
         <div id="emojiContainer" class="hidden"></div>
@@ -287,21 +287,21 @@
         const buttonsContainer = document.querySelector('.buttons');
 
         const sorryMessages = [
-            "I'm really sorry ❤️<br>Please forgive me 🥺",
-            "I promise I'll never do it again 😢💕",
-            "You mean the world to me 🌍💖",
-            "I can't stop thinking about how sorry I am 😭",
-            "Please give me another chance 🙏❤️",
-            "I'll do anything to make it up to you 💝",
-            "You're the most important person to me 🥰",
-            "I messed up, but I love you so much 💕😔",
-            "Life isn't the same without your smile 😢💖",
-            "I promise to be better for you 🌟❤️",
-            "Forgive me please? I'll buy you ice cream 🍦💕",
-            "I'm so so so sorry baby 😭❤️",
-            "You deserve the world and I'll give it to you 🌹💖",
-            "Pretty please with a cherry on top? 🍒🥺",
-            "I'll never let you down again, I promise 💍❤️"
+            "Çok özür dilerim bitanem ❤️<br>Lütfen beni affet 🥺",
+            "Seni kırmayacağım söz veriyorumm 😢💕",
+            "Sen benim dünyamsın Herşeyimsinnn 🌍💖",
+            "Ne olur bana güven 😭",
+            "Bana bir şans daha ver güzelimmm 🙏❤️",
+            "Herşeyi yoluna koyacağıma söz veriyorummm balımm 💝",
+            "Seni Aşırı Aşırırırı seviyorummm baltanemmmmmmmmm 🥰",
+            "Evet hatamın farkındayım ve tekrardan ardisin olmak icin cabalicam 💕😔",
+            "Senin gülüşün olmadan ben nasıl yaşarım gülüşünde hayat bulduğummm 😢💖",
+            "Söz veriyorum sana ARDİS SÖZÜÜÜÜÜ 🌟❤️",
+            "Sana magnum dondurma alayımmmm 🍦💕",
+            "Ben gerçekten çok üzgünüm bebeğimmmm 😭❤️",
+            "Dünyaları hak ediyorsun ve ben onları sana vereceğim 🌹💖",
+            "Dondurman kirazlı olsun mu? 🍒🥺",
+            "Asla vazgeçmeyeceğim hep senin için çabalayacağım 💍❤️"
         ];
 
         let currentMessageIndex = 0;
@@ -406,11 +406,11 @@
                 setTimeout(() => mainText.classList.remove('shake'), 500);
                 
                 if (noClickCount <= 5) {
-                    clickCount.innerHTML = `Come on... just click YES! 🥺 (Attempts: ${noClickCount})`;
+                    clickCount.innerHTML = `Nolur eski ardisin olim affet! 🥺 (Attempts: ${noClickCount})`;
                 } else if (noClickCount <= 10) {
-                    clickCount.innerHTML = `Please baby! I'm begging you! 😭 (Attempts: ${noClickCount})`;
+                    clickCount.innerHTML = `LÜTFEN BEBEĞİMMMM! 😭 (Attempts: ${noClickCount})`;
                 } else {
-                    clickCount.innerHTML = `I can do this all day! 💪❤️ (Attempts: ${noClickCount})`;
+                    clickCount.innerHTML = `KABUL EDENE KADAR VAZGECMİCEMKİNEEE ❤️ (Attempts: ${noClickCount})`;
                 }
                 
                 createHeart();
@@ -431,11 +431,11 @@
             setTimeout(() => mainText.classList.remove('shake'), 500);
 
             if (noClickCount <= 5) {
-                clickCount.innerHTML = `Come on... just click YES! 🥺 (Attempts: ${noClickCount})`;
+                clickCount.innerHTML = `Nolur eski ardisin olim affet! 🥺 (Attempts: ${noClickCount})`;
             } else if (noClickCount <= 10) {
-                clickCount.innerHTML = `Please baby! I'm begging you! 😭 (Attempts: ${noClickCount})`;
+                clickCount.innerHTML = `LÜTFEN BEBEĞİMMMM! 😭 (Attempts: ${noClickCount})`;
             } else {
-                clickCount.innerHTML = `I can do this all day! 💪❤️ (Attempts: ${noClickCount})`;
+                clickCount.innerHTML = `KABUL EDENE KADAR VAZGECMİCEMKİNEEE ❤️ (Attempts: ${noClickCount})`;
             }
 
             createHeart();
@@ -443,10 +443,10 @@
 
         // Handle Yes button click
         yesBtn.addEventListener('click', function() {
-            mainText.innerHTML = "Yay! You forgave me! 😍💖🥳";
+            mainText.innerHTML = "TEKRARDAN Ardis olduuummm! 😍💖🥳";
             emojiContainer.innerHTML = "😊❤️💃🎉✨🥰💕🌟🎊💖🌹😘";
             emojiContainer.classList.remove('hidden');
-            clickCount.innerHTML = "I LOVE YOU SO MUCH! ❤️❤️❤️";
+            clickCount.innerHTML = "SENİ COK SEVİYORUM BANA GÜVEN HERŞEYİ DÜZELTİCEMM! ❤️❤️❤️";
             buttonsContainer.style.display = 'none';
 
             for (let i = 0; i < 30; i++) {
